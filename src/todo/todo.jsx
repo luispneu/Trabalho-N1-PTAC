@@ -38,12 +38,12 @@ export default function Todo() {
       </form>
       {lista.map((heroi) => (
         <Link to={`/detalhe/${heroi.id}`}>
-        <div key={heroi.id}>
-          <p>ID: {heroi.id}</p>
-          <p>Herói: {heroi.herois}</p>
-          <p>Poder: {heroi.poder}</p>
-          <button onClick={() => remover(heroi.id)}>Apagar</button>
-        </div>
+          <div key={heroi.id}>
+            <p>ID: { }</p>
+            <p>Herói: {heroi.herois}</p>
+            <p>Poder: {heroi.poder}</p>
+            <button onClick={() => remover(heroi.id)}>Apagar</button>
+          </div>
         </Link>
       ))}
     </div>
